@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-01T15:32:38.151Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="LiR-LPNMLG1q7beJMOum" version="20.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-01T16:02:17.974Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="gxTVXN-run3ERg2fXbX9" version="20.2.7" type="github">
   <diagram id="mL-JeoDZIWx7qjkdhx3i" name="Page-1">
     <mxGraphModel dx="1051" dy="682" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -13,18 +13,25 @@
         <mxCell id="84caj9VsUkDdfpbke3eb-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="84caj9VsUkDdfpbke3eb-2" target="84caj9VsUkDdfpbke3eb-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="84caj9VsUkDdfpbke3eb-6" value="Many to many" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="84caj9VsUkDdfpbke3eb-5">
+        <mxCell id="84caj9VsUkDdfpbke3eb-6" value="One to many" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="84caj9VsUkDdfpbke3eb-5">
           <mxGeometry x="-0.0917" y="-3" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="84caj9VsUkDdfpbke3eb-2" value="Character" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="430" width="120" height="60" as="geometry" />
+        <mxCell id="84caj9VsUkDdfpbke3eb-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="84caj9VsUkDdfpbke3eb-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="590" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="84caj9VsUkDdfpbke3eb-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="84caj9VsUkDdfpbke3eb-4" target="84caj9VsUkDdfpbke3eb-10">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="84caj9VsUkDdfpbke3eb-16" value="Text" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="84caj9VsUkDdfpbke3eb-14">
+          <mxGeometry x="-0.6429" y="2" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="84caj9VsUkDdfpbke3eb-4" value="Inventory:&lt;br&gt;capacity (weight)&lt;br&gt;dimensions" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="84caj9VsUkDdfpbke3eb-2" value="Character&lt;br&gt;campaign_id&lt;br&gt;user_id&lt;br&gt;inventory_id&lt;br&gt;capacity" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="430" width="120" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="84caj9VsUkDdfpbke3eb-4" value="Inventory (m2m):&lt;br&gt;char_id&lt;br&gt;container_id" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="350" y="610" width="120" height="170" as="geometry" />
         </mxCell>
         <mxCell id="84caj9VsUkDdfpbke3eb-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="84caj9VsUkDdfpbke3eb-7" target="84caj9VsUkDdfpbke3eb-2">
@@ -43,11 +50,23 @@
         <mxCell id="84caj9VsUkDdfpbke3eb-7" value="Campaign" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="170" y="240" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="84caj9VsUkDdfpbke3eb-10" value="Item:&lt;br&gt;height&lt;br&gt;width&lt;br&gt;weight&lt;br&gt;cost&lt;br&gt;durability?&lt;br&gt;stack_size&lt;br&gt;category" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="680" y="595" width="120" height="200" as="geometry" />
+        <mxCell id="84caj9VsUkDdfpbke3eb-10" value="Item:&lt;br&gt;height&lt;br&gt;width&lt;br&gt;weight&lt;br&gt;stack_size&lt;br&gt;category" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="795" width="120" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="84caj9VsUkDdfpbke3eb-12" value="Item posetion table:&lt;br&gt;inventory_id&lt;br&gt;item_id&lt;br&gt;core_cell (top-left)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="84caj9VsUkDdfpbke3eb-12" value="Cell:&lt;br&gt;container_id&lt;br&gt;character_id&lt;br&gt;x_coord&lt;br&gt;y_coord&lt;br&gt;occupied_by:&lt;br&gt;&amp;nbsp;nullable fk" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="510" y="560" width="120" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="84caj9VsUkDdfpbke3eb-15" value="Equiped&lt;br&gt;armor: nullable fk&lt;br&gt;weapon 1&lt;br&gt;weapon 2&lt;br&gt;weapon 3&lt;br&gt;ring1" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="590" width="120" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="84caj9VsUkDdfpbke3eb-18" value="Containers&lt;br&gt;id&lt;br&gt;height&lt;br&gt;width&lt;br&gt;available" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="795" width="120" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="84caj9VsUkDdfpbke3eb-21" value="Attunements:&lt;br&gt;enchantment&lt;br&gt;char_id&lt;br&gt;item_id" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="370" width="120" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="84caj9VsUkDdfpbke3eb-22" value="Real_tiems:&lt;br&gt;item_type&lt;br&gt;container_id" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="850" width="120" height="160" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
